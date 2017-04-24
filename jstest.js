@@ -32,6 +32,7 @@ git config --global color.ui auto
 git init // erstellt git repository
 echo "To-do list web app, organize and share your to-do's" > README.md // erstellt ReadMe
 git add myFile.txt // fügt Datei zu git "staging area" hinzu (auch mehrere)
+git add . // fügt alle Dateien zu staging area hinzu
 git commit -m "Initial Project Commit" // speichert alles als commit
 git status // Zeigt den aktuellen Status an
 git diff // zeigt Unterschied zwischen working directory und Staging Area
