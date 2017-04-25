@@ -1,3 +1,4 @@
+#############################################################
 ## NPM
 npm init // erstellt package.json (mit Fragen)
 npm init --yes // erstellt default package.json
@@ -24,6 +25,7 @@ http-server -p 4004
 http-server -p 4004 -s -o
 http-server -p 4004 -a localhost
 
+#############################################################
 ## Git
 git config --global user.name "[name]"
 git config --global user.email "[email address]"
@@ -75,9 +77,10 @@ git push -f origin master // force push auf GitHub
 
 git fetch <remote> // download all changes from remote without intergrating into HEAD
 git pull <remote> <branch> // download all changes from remote and directly merge into HEAD
-  
+
 git branch -d branch_name // delete local branch
 
+#############################################################
 ## JavaScript
 // letzten Teil von URL auslesen
 var fileUrl = window.location.href;
@@ -87,6 +90,7 @@ var lastSegment = urlArray[urlArray.length-1];
 var fileUrl = window.location.href;
 var lastSegment = fileUrl.substr(fileUrl.lastIndexOf('/') + 1);
 
+#############################################################
 ## OpenLayers
 // Layer Extent (Indien), richtige Projection muss in view stehen!
 layers: [
@@ -126,7 +130,7 @@ map.getView().fit(extent, map.getSize());
 // TickFormat
 var formatAsPercentage = d3.format(".1%");
 formatAsPercentage(0.54321) --> "54.3%"
-        
+
 var formatAsDecimal = d3.format(".2f");
 formatAsDecimal(0.12345) --> "0.12"
 
